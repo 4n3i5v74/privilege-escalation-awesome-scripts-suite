@@ -126,6 +126,7 @@ namespace winPEAS.Helpers
             Console.WriteLine(YELLOW + "  [*] " + GREEN + "WinPEAS is a binary to enumerate possible paths to escalate privileges locally" + NOCOLOR);
             Console.WriteLine(LBLUE + "        quiet" + GRAY + "                Do not print banner" + NOCOLOR);
             Console.WriteLine(LBLUE + "        notcolor" + GRAY + "             Don't use ansi colors (all white)" + NOCOLOR);
+            Console.WriteLine(LBLUE + "        domain" + GRAY + "               Enumerate domain information" + NOCOLOR);
             Console.WriteLine(LBLUE + "        systeminfo" + GRAY + "           Search system information" + NOCOLOR);
             Console.WriteLine(LBLUE + "        userinfo" + GRAY + "             Search user information" + NOCOLOR);
             Console.WriteLine(LBLUE + "        processinfo" + GRAY + "          Search processes information" + NOCOLOR);
@@ -139,7 +140,6 @@ namespace winPEAS.Helpers
             Console.WriteLine(LBLUE + "        wait" + GRAY + "                 Wait for user input between checks" + NOCOLOR);
             Console.WriteLine(LBLUE + "        debug" + GRAY + "                Display debugging information - memory usage, method execution time" + NOCOLOR);
             Console.WriteLine(LBLUE + "        log" + GRAY +$"                  Log all output to file \"{Checks.Checks.LogFile}\"" + NOCOLOR);
-            Console.WriteLine(YELLOW + "       [+] " + LYELLOW + "By default all checks (except CMD checks and additional checks) are executed" + NOCOLOR);
             Console.WriteLine();
             Console.WriteLine(LCYAN + "        Additional checks (slower):");
             Console.WriteLine(LBLUE + "        -lolbas" + GRAY + $"              Run additional LOLBAS check" + NOCOLOR);
